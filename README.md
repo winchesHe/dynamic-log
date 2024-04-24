@@ -3,5 +3,5 @@
 <p align="center">A simple logging library for terminal that allows you to dynamic log with fully color</p>
 
 <p align='center'>
-<video src='./screnshoots/CleanShot 2024-04-24 at 23.01.23.mp4' />
+https://github.com/nextui-org/nextui-cli/assets/96854855/833d6942-99c8-4c65-bbed-8214e64c7b90
 </p>
