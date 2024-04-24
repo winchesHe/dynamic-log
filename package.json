@@ -1,7 +1,7 @@
 {
   "name": "@winches/dynamic-log",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "dynamic log for your nodejs project enhance your log with color and emoji/ascii art",
   "author": "winches",
   "license": "MIT",
