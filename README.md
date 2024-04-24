@@ -38,6 +38,8 @@ sayBox(['wo zhe shi ce shi ni kan kan', 'test da jia hao'], { boxOptions: { cent
 
 This could use many funny option to show a funny output in the terminal
 
+You can choose the character from `cat`, `cow`, `cheese`...
+
 ```ts
 funnySay(['wo zhe shi ce shi ni kan kan ', 'test da jia hao'], { character: 'cow', bodyFunny: true })
 ```
