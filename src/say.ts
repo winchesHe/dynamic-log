@@ -5,8 +5,7 @@ import { type BoxOptions, outputBox } from './output-box'
 import type { Character } from './character'
 import { generateCharacter } from './character'
 import { getText, getTextMaxLength, randomBetween, sleep, transformEmoji } from './helper'
-import type { OmitTips } from './types'
-import type { ChalkColor } from './box'
+import type { ChalkColor, OmitTips } from './types'
 
 export type Message = string | Promise<string>
 

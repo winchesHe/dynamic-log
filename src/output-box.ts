@@ -1,7 +1,7 @@
 import chalk from 'chalk'
-import type { ChalkColor } from './box'
 import { boxRound } from './box'
 import { colorMatchRegex } from './strip'
+import type { ChalkColor } from './types'
 
 export interface BoxOptions {
   text: string

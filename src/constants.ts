@@ -1,4 +1,4 @@
-import type { ChalkColor } from './box'
+import type { ChalkColor } from './types'
 
 export const chalkColorList: ChalkColor[] = [
   'black',

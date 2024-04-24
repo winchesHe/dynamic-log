@@ -5,4 +5,4 @@ import { funnySay, say, sayBox } from './src/say'
 
 // say(['wo zhe shi ce shi ni kan kan', 'test da jia hao'], { title: chalk.magentaBright('𝓝𝒆𝔁𝓽𝓤𝓘:') })
 
-funnySay(['wo zhe shi ce shi ni kan kan ', 'test da jia hao'], { character: 'cow', bodyFunny: true })
+funnySay(['wo zhe shi ce shi ni kan kan ', 'test da jia hao'], { character: 'cow' })
