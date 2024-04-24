@@ -46,6 +46,51 @@ funnySay(['wo zhe shi ce shi ni kan kan ', 'test da jia hao'], { character: 'cow
 <img src="https://github.com/winchesHe/dynamic-log/assets/96854855/46df0d01-77d1-43b5-aed9-a1c880c10bb2" />
 </p>
 
+### With custom emoji
+
+```ts
+const defaultSayingEyes = chalk.white('ಠ')
+const defaultStartEyes = chalk.white('◕')
+const defaultEndEyes = chalk.white('◕')
+
+say(['wo zhe shi ce shi ni kan kan', 'test da jia hao'], {
+  title: chalk.magentaBright('𝓝𝒆𝔁𝓽𝓤𝓘:'),
+  // Fully custom emoji
+  emoji: [
+    // Start emoji
+    { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('◡'), eyes: [defaultStartEyes, defaultStartEyes] },
+    // Saying emoji
+    [
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('•'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('○'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('■'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('▪'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('▫'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('▬'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('▭'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('-'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+      { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('○'), eyes: [defaultSayingEyes, defaultSayingEyes] },
+    ],
+    // End emoji
+    { content: '٩($eyes1 $mouth $eyes2｡)۶', mouth: chalk.cyan('◡'), eyes: [defaultEndEyes, defaultEndEyes] },
+  ]
+  // Simple emoji
+  // emoji: ['٩(◕‿◕｡)۶', '٩(ಠ_ಠ)۶', '٩(◉‿◉｡)۶']
+})
+```
+
+### With custom render content
+
+```ts
+say(['wo zhe shi ce shi ni kan kan', 'test da jia hao'], {
+  title: chalk.magentaBright('𝓝𝒆𝔁𝓽𝓤𝓘:'),
+  renderContent: (msg, emoji) => {
+    // You can get the current saying emoji and the message, and you can return what you want render
+    return `${emoji} ${msg}` // output like: ٩(◕‿◕｡)۶ wo zhe shi ce shi ni kan kan
+  }
+})
+```
+
 ## 📚 Api
 
 ```ts
